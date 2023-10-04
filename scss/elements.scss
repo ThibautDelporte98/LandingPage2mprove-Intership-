@@ -1,0 +1,42 @@
+@import "settings";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+    font-weight: $fw-light;
+    font-size: 1rem !important;
+}
+
+h1{
+    font-size: 26px !important;
+    font-weight: $fw-bold !important;
+    color: $color-primary !important;
+}
+
+h2{
+    font-size: 22px !important;
+}
+
+h3{
+    font-size: 20px !important;
+}
+
+p{
+    font-size: 14px;
+}
+
+.bg-gray{
+    background-color: #F3F3F3 !important;
+}
+
+.bold{
+    font-weight: $fw-bold;
+}
+
+.spacing{
+    padding-bottom: .5rem;
+    color: $color-primary;
+}

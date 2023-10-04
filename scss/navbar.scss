@@ -1,0 +1,37 @@
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+.nav-link{
+    padding-right: 2rem !important;
+    font-size: .9rem !important;
+}
+
+.nav{
+    background-color: $color-primary;
+}
+.c-navbar{
+    height: 4rem !important;
+    z-index: 2;
+    &__img{
+        width: 8rem;
+        margin-top: .25rem;
+    }
+    &__button{
+        background-color: $color-secundairy;
+        color: $color-primary;
+        border: none;
+        border-radius: 5px;
+        padding: 0 1.5rem 0 1.5rem;
+        font-weight: $fw-semi;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-collapse{
+
+        background-color: $color-primary;
+        width: 100vw;
+
+    }
+
+  }

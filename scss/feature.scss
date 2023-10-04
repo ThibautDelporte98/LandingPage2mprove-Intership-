@@ -1,0 +1,89 @@
+.c-feature{
+    padding-top: 2.1rem;
+    height: auto;
+    padding-bottom: 3rem;
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -.5rem;
+        
+    }
+    &__item{
+        width: calc(100% / 3 - 1rem);
+        // height: 10rem;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: .5rem;
+        background-color: $color-primary;
+        &:hover{
+            .c-feature__head{
+                background-color: $color-accent;
+                border-bottom: 8px solid $color-secundairy;
+                transition: all .25s ease-in;
+            }
+        }
+    }
+    &__head{
+        display: flex;
+        background-color: $color-secundairy;
+        height: 5rem;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        border-bottom: 4px solid $color-accent;
+        color: $color-primary;
+        transition: all .25s ease-in;
+    }
+    &__icon{
+        svg{
+            fill: $color-primary;
+            margin-top: 1.3rem;
+            margin-left: 1rem;
+        }
+    }
+    &__title{
+        margin-left: .75rem;
+        margin-top: 1.7rem;
+        padding-right: 1rem;
+        font-weight: $fw-semi;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__body{
+        padding: 1.25rem;
+        height: auto;
+    }
+    &__txt{
+        margin-bottom: 1rem !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .c-feature__item{
+        width: calc(100% / 2 - 1rem);
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .c-feature__item{
+        width: 100%;
+        margin: unset;
+        margin-bottom: 1rem;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .c-feature__icon{
+        svg{
+            width: 1rem;   
+        }
+        
+    }
+    .c-feature__title{
+        font-size: .9rem;
+    }
+
+  }
+
+

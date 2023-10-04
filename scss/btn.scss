@@ -1,0 +1,42 @@
+.c-btn{
+    color: $color-primary;
+    font-weight: $fw-semi;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    &__btnTxt{
+       background-color: $color-accent;
+        width: 30rem;
+        padding: .75rem 0;
+        border-radius: 5px;
+        transition: all .25s ease-out;
+        &:hover{
+            transition: all .25s ease-in;
+            background-color: $color-extraAccent;
+        }
+        &--accent{
+            background-color: $color-extraAccent;
+            font-weight: $fw-light;
+            width: 20rem;
+            font-size: .75rem;
+            &:hover{
+                transition: all .25s ease-in;
+                background-color: $color-accent;
+            }
+        }
+    }
+
+}
+
+.btn{
+    padding: unset !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .btn{
+        width: 100% !important;
+    }
+    .c-btn__btnTxt{
+        width: unset;
+    }
+  }

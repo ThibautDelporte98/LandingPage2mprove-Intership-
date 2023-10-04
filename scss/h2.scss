@@ -1,0 +1,51 @@
+.c-h2{
+    &__bg{
+        width: 100vw;
+        height: 8.5rem;
+        background: linear-gradient(to left,rgb(68, 115, 139, .8),rgb(55, 123, 158, .8),rgb(61, 125, 155, .8),rgb(67, 144, 181, .8),rgb(60, 143, 184, .8), rgb(58, 157, 204, .8), $color-secundairy--opacity);
+;
+        display: table-cell;
+        vertical-align: middle ;
+        overflow: hidden;
+
+    }
+    &__bgImg{
+        position: fixed;
+        bottom: 0rem;
+        z-index: -1;
+        width: 100vw;
+        height:100%;
+        object-fit: cover;
+        overflow: hidden;
+        
+    }
+    &__title{
+        display: block;
+        opacity: 1 !important;
+        text-align: center;
+        color: $color-primary;
+        opacity: 1;
+        padding: 0 2rem 0 2rem;
+        line-height: 1.5rem;
+        h2{
+         font-weight: $fw-bold !important;
+         line-height: 1.75rem;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .c-h2{
+       &__title{
+        // padding: 3.5rem 2rem 2rem 2rem;
+        h2{
+            font-size: 20px !important;
+            display: flex;
+            justify-content: space-around;            
+        }
+
+       }
+    }
+
+}

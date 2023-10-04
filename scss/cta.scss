@@ -1,0 +1,100 @@
+.c-cta{
+    position: relative;
+    padding: 2rem 0;
+    height: auto;
+    background-color: $color-primary;
+    &__content{
+        padding: 2rem 0;
+        width: 80%;
+    }
+    &__flex{
+        display: flex;
+    }
+    &__visual{
+        padding: 2rem 0;
+        text-align: center;
+        img{
+            width: 17.5rem;
+            height: 17.5rem;
+        }
+    }
+    &__visualMobile{
+        img{
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    &__title{
+        margin-bottom: 1rem;
+    }
+    &__txt{
+        width: 100%;
+        font-weight:$fw-light !important ;
+        margin-bottom: 2.5rem !important;
+    }
+    &__btn{
+        text-align: center;
+        background-color: $color-extraAccent;
+        padding: .6rem 5rem .6rem 5rem;
+        color: $color-primary;
+        font-size: .85rem;
+        font-weight: $fw-light;
+        border-radius: 5px;
+        width: 25rem !important;
+        a{
+            color: $color-primary;
+            text-decoration: none;
+            width: 100%;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .c-cta{
+        padding: 2rem 0 4rem 0;
+    }
+
+  }
+@media only screen and (min-width: 993px) {
+    .c-cta__visualMobile{
+        display: none;
+    }
+
+  }
+
+@media only screen and (max-width: 993px) {
+    .c-cta__visual{
+        display: none;
+    }
+    // .c-cta__txt{
+    //     width: 100%;
+    // }
+    .c-cta__visualMobile{
+        img{
+            bottom: 3rem;
+            left: 75%;
+        }
+    }
+  }
+
+  @media only screen and (max-width: 567px) {
+    .c-cta__visualMobile{
+        img{
+            right: 0;
+        }
+    }
+    .c-cta__content{
+        width: 100%;
+    }
+    .c-cta__txt{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .c-cta__visualMobile{
+        display: none;
+    }
+  }

@@ -1,0 +1,155 @@
+.c-pros{
+    font-size: 16px !important;
+    height: auto;
+    &__comps{
+        position: relative;
+        padding: 2rem 0 2rem 0; 
+        background-color: $color-primary;
+        height: 30rem;
+        &--right{
+            height: 32.5rem;;
+        }
+
+    }
+    &__descrip{
+        margin-top: 4rem !important;
+        font-weight: $fw-light !important;
+    }
+    &__txt{
+        margin-top: 2rem;
+    }
+    &__img{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 3rem;
+        // clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+        // clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        // clip-path: polygon(77% 72%, 100% 33%, 86% 11%, 41% 3%, 5% 51%, 25% 85%);
+        // border-radius: 15px;        // mask-image:url(C:/Users/Administrator/Documents/WP-copixa/landingpage-2mprove/Landingpage2mprove/img/background.png);
+        // mask-size: 27.5rem;
+        // mask-repeat: no-repeat;
+        // mask-position:2rem 4rem, left;
+        // mask-size: cover;
+        // -webkit-mask-image:url(/img/background.png);
+        // -webkit-mask-size: 27.5rem;
+        // -webkit-mask-repeat: no-repeat;
+        // -webkit-mask-position:2rem 4rem, left;
+        // -webkit-mask-size: cover;
+        // &--left{
+        //     -webkit-mask-position: 10rem 4rem,right !important;
+        // }
+
+        img{
+            width: 30rem;
+            height: auto;
+            object-fit: cover;
+            padding-right: 1rem;
+        }
+    }
+}
+
+.right{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+}
+.description-right{
+    width: 42.5% !important;
+}
+
+// width of txt position to the right side when is even. 
+
+  @media only screen and (min-width: 1600px) {
+    .description-right{
+        max-width: calc(1320px / 2) !important;
+    }
+  }
+
+
+// Height of even elements 
+  @media only screen and (max-width: 1200px) and (min-width: 993px) {
+    .c-pros__comps--right{
+        height: 37.5rem !important;
+    }
+  }
+
+
+  // mask position image till 1400px screen size 
+
+//   @media only screen and (max-width: 1400px) {
+//     .c-pros__img--left{
+//         -webkit-mask-size: 25rem;
+
+//     }
+//   }
+
+//   // mask position image till 1200px screen size 
+//   @media only screen and (max-width: 1200px) {
+//     .c-pros__img--left{
+//         -webkit-mask-position: 4rem 3rem, right !important;
+
+//     }
+//   }
+
+
+// Image size sreen size lg 
+// @media only screen and (min-width: 992px) {
+
+//     .c-pros__img{
+//         -webkit-mask-size: 25rem !important;
+
+//     }
+
+//   }
+
+
+// Mobile responsive settings 
+
+@media only screen and (max-width: 992px) {
+    .right{
+        position: unset;
+        padding-right: unset;
+    }
+    .description-right{
+        width: 100% !important;
+    }
+    // .c-pros__img{
+    //     -webkit-mask-size: 65%;
+    // }
+    .c-pros__comps{
+        height: unset;
+    }
+    // .c-pros__img{
+    //     -webkit-mask-position: 4rem 3rem, left !important;
+    //     -webkit-mask-size: 90% !important;
+
+    //     img{
+    //         height: 32rem;
+    //     }
+    // }
+  }
+
+//   @media only screen and (max-width: 767px) {
+//     .c-pros__img{
+//         -webkit-mask-size: 80%;
+//         -webkit-mask-position: center !important;
+
+//     }
+//     .c-pros__img--left{
+//         -webkit-mask-position: center !important;
+
+//     }
+//   }
+  @media only screen and (max-width: 500px) {
+        .c-pros__img{
+            img{
+                width: 100%;
+            }
+        }
+        .c-pros__description{
+            margin-bottom: 3rem;
+        }
+  }
+
+
